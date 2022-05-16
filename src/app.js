@@ -20,7 +20,7 @@ api.get('/search_movies', (req, res) =>{
     let keys = Object.keys(req.query);
     for(let i = 0; i < keys.length; i++) {
         if(keys[i] !== 'name') {
-            res.send('keys were not found');
+            res.send('unrecognized query parameters');
             return 0;
         }
     } 
